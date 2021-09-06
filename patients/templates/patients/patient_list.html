@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Patients Request List</h1>
+<div class="posts">
+    {% for templat in kate %}
+    <div class="post">
+        <h2><a href="{% url 'patients:detail' slug=templat.slug %}">{{templat.title}}</a></h2>
+        <p>{{templat.snippet}}</p>
+        <p>{{templat.date}}</p>
+        <p class="author">added by {{templat.author.username}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

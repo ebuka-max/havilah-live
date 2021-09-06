@@ -1,0 +1,146 @@
+body{ 
+    background:#0f121f;
+    background-image: url(/static/star.jpg);
+    background-repeat:no-repeat ; 
+    color: red;
+}
+
+  body*{ 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h1, h2, h3, h4, h5{
+    font-weight:normal;
+    margin:0;
+}
+
+a, a:hover, a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+div.wrapper h1{
+  text-align:center;
+  margin:100px auto;
+  font-size: 2.4em;
+}
+
+header{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  padding:20px 0;
+}
+
+nav{
+  justify-self:end;
+}
+
+nav li{
+  display:inline-block;
+  margin-left:20px;
+}
+
+nav button{
+  background:none;
+  color:#fff;
+  cursor:pointer;
+  border:0;
+  font-size:1em;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.post{
+  padding:10px;
+  border:1px solid #00dba0;
+  position:relative;
+  padding-bottom:40px;
+}
+
+.post h2{
+  font-size:1.2em;
+}
+
+.post .author{
+  padding:10px;
+  background: #00dba0;
+  position:absolute;
+  right:0;
+  bottom:0;
+  margin:0;
+  color: #0f121f;
+}
+
+.patient-detail .patient{
+  padding:0;
+}
+
+.patient-detail .patient img{
+  max-width:100%;
+}
+
+.patient-detail .patient h2{
+  text-align:center;
+  margin: 20px auto;
+  font-size:2em;
+}
+
+.patient-detail .patient p{
+  text-align:center;
+}
+
+.site-form{
+  margin-top:60px;
+  border:1px solid #00dba0;
+  padding:20px;
+}
+
+.site-form input, .site-form textarea{
+  display:block;
+  margin:20px 0 0 0;
+  padding: 10px;
+}
+
+a.highlight{
+  border: 1px solid #00dba0;
+  padding:10px;
+  border-radius: 4px;
+  color: #00dba0;
+}
+
+.helptext, .helptext ul{
+  margin:0 auto 20px;
+  color:#bbb;
+  font-size:0.9em;
+  display:block;
+}
+
+.errorlist li{
+  padding:10px;
+  list-style-type:none;
+  border: 1px solid #ff5722;
+  color: #ff5722;
+  margin:10px 0;
+}
+
+.errorlist{
+  padding:0;
+}
+
+.submit{
+  background:#00bda0;
+  border:0;
+  color:#fff;
+  font-size:1.2em;
+  border-radius:4px;
+  margin:10px 0;
+}

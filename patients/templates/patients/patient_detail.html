@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="patient-detail">
+    <div class="patient">
+        <img src="{{blath.thumb.url}}" />
+        <h2>{{blath.title}}</h2>
+        <p>{{blath.body}}</p>
+        <p>{{blath.date}}</p>
+    </div>
+</div>
+
+{% endblock %}
